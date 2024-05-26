@@ -1,0 +1,142 @@
+/* Обнуление */
+ 
+html {
+  box-sizing: border-box;
+ }
+ *, *::before, *::after {
+  box-sizing: inherit;
+ }
+ img {
+  display: block;
+ }
+ h1, h2, h3, h4, h5, h6, p, ul, li, a {
+  padding: 0;
+  margin: 0;
+ }
+ body {
+  margin: 0;
+  padding: 0;
+ }
+ 
+ /* Переменные с цветами */
+ 
+ :root {
+  --darck-color: #000000;
+  --white-color: #ffffff;
+  --red-color: #ED4C5C;
+ }
+ 
+ /* Стили для текста */
+ 
+ .text_h1 {
+  font-family: 'RobotoBold';
+  font-size: 72px;
+  letter-spacing: 3.8px;
+  color: var(--white-color);
+  text-transform: uppercase;
+ }
+ .text_h2 {
+  font-family: 'RobotoMedium';
+  font-size: 36px;
+  color: var(--darck-color);
+ } 
+ .text_p {
+  font-family: 'RobotoMRegular';
+  font-size: 14px;
+  color: var(--darck-color);
+ }
+ .text_preview {
+  font-family: 'RobotoMRegular';
+  font-size: 12px;
+  color: var(--darck-color);
+ }
+ .text_link {
+  font-family: 'RobotoMRegular';
+  font-size: 12px;
+  color: var(--red-color);
+ }
+ 
+ /* Контэйнер */
+ 
+ .container {
+  max-width: 1110px;
+  margin: 0 auto;
+ }
+
+ /* Header */
+
+ .header__ {
+  background-image: url(../img/bg_header.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat; 
+  height: 782px;
+}
+
+/* Navbar */
+
+.header__navbar {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 169px;
+}
+.header__navbar_menu {
+  margin-right: 12px;
+  display: flex;
+  justify-content: space-between; 
+  width: 440px;
+  list-style: none;
+}
+.header__navbar_menu_item:last-child {
+  margin-right: 0;
+}
+.header__navbar_menu_item a{
+  font-family: 'RobotoMedium';
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white-color);
+}
+.header__navbar_btn {
+  width: 100px;
+  height: 40px;
+  border: solid 1px var(--white-color);
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--white-color);
+  font-family: 'RobotoMRegular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Firstscreen */
+
+.header__firstscreen_title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header__firstscreen_text {
+  max-width: 443px;
+  text-align: center;
+  margin: 0 auto 56px;
+  font-family: 'RobotoMedium';
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--white-color);
+}
+.header__firstscreen_btn {
+  padding-top: 0;
+  padding-left: 0;
+  width: 160px;
+  height: 50px;
+  background-color: var(--white-color);
+  border-radius: 6px;
+  border: none;
+  color: var(--red-color);
+  font-family: 'RobotoMRegular';
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+}
