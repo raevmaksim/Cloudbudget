@@ -315,7 +315,7 @@ html {
 .contacts__flex {  
   padding-top: 159px;
   display: flex;
-  margin-bottom: 102px;
+  margin-bottom: 136px;
 }
 .contacts__content {
   margin-right: 127px;
@@ -367,6 +367,35 @@ html {
   border: none;
   border-radius: 6px;
 }
+
+/* Footer */
+
+.footer {
+  background-color: #fafafa;
+  margin-bottom: 270px;
+}
+.footer__flex {
+  padding-bottom: 46px;
+}
+.footer__title {
+  padding-top: 43px;
+  font-family: 'LatoBold';
+  font-size: 18px;
+  margin-bottom: 21px;
+}
+.footer__text {
+  font-family: 'LatoRegular';
+  font-size: 12px;
+  line-height: 18px;
+  max-width: 148px;
+  margin-bottom: 43px;
+}
+.footer__copywriter {  
+  font-family: 'LatoRegular';
+  font-size: 12px;
+  line-height: 18px;
+}
+
 
 
 
