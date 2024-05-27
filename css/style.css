@@ -169,9 +169,10 @@ html {
 .about__link {
   font-size: 14px;
 }
-.about__img {
+.about__video {
   width: 445px;
   height: 311px;
+  border-radius: 15px;
   margin-bottom: 95px;
 }
 
@@ -225,8 +226,6 @@ html {
 
 /* Services */
 
-.services {
-}
 .services__title {
   padding-top: 65px;
   text-align: center;
@@ -236,7 +235,7 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin-bottom: 110px;
+  margin-bottom: 213px;
 }
 .services__card {  
   position: relative;
@@ -269,14 +268,105 @@ html {
   text-align: center;
   margin-bottom: 12px;
 }
-.text_h3 {
-}
 .services__card_text {
   max-width: 191px;
   margin: 0 auto;
   text-align: center;
 }
 
+/* Download */
+
+.download {
+  background-color: var(--red-color);
+}
+.download__flex {
+  padding-top: 94px;
+  display: flex;
+}
+.download__content {
+  margin-right: 125px;
+}
+.download__title {
+  padding-top: 28px;
+  max-width: 345px;
+  color: var(--white-color);
+  margin-bottom: 50px;
+}
+.download__text {
+  max-width: 445px;
+  color: var(--white-color);
+  line-height: 20px;
+  margin-bottom: 42px;
+}
+.download__socials {
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+}
+.download__video_mp4 {
+  width: 445px;
+  height: 311px;
+  border-radius: 15px;
+  margin-bottom: 91px;
+}
+
+/* Contacts */
+
+.contacts__flex {  
+  padding-top: 159px;
+  display: flex;
+  margin-bottom: 102px;
+}
+.contacts__content {
+  margin-right: 127px;
+}
+.contacts__title {
+  padding-top: 26px;
+  margin-bottom: 54px;
+}
+.contacts__text {
+  line-height: 20px;
+  width: 443px;
+}
+.contacts__form_input-name {
+  width: 540px;
+  height: 60px;
+  border: 1px solid var(--darck-color);
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+.contacts__form_input-name::placeholder {
+  padding-left: 31px;
+  font-family: 'RobotoMRegular';
+  font-size: 16px;
+  color: #132743;
+  opacity: 0.5;
+}
+.contacts__form_input-phone {
+  width: 540px;
+  height: 60px;
+  border: 1px solid var(--darck-color);
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+.contacts__form_input-phone::placeholder {
+  padding-left: 31px;
+  font-family: 'RobotoMRegular';
+  font-size: 16px;
+  color: #132743;
+  opacity: 0.5;
+}
+.contacts__form_btn {
+  width: 160px;
+  height: 50px;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  font-family: 'RobotoMRegular';
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+}
 
 
 
