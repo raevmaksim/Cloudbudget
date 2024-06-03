@@ -635,8 +635,6 @@ html {
     align-items: stretch;
     margin-bottom: 30px;
   }
-  .header__navbar_logo {
-  }
   .header__navbar_menu-btns {
     justify-content: flex-end;
     margin-bottom: 60px;
