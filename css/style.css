@@ -190,10 +190,13 @@ html {
 .benefits__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   gap: 30px;
 }
+.benefits__card {
+  position: relative;
+}
 .benefits__img {
-  position: absolute;
   z-index: 1;
 }
 .benefits__content {
@@ -201,11 +204,12 @@ html {
   border-radius: 8px;
   z-index: 2;
   width: 293px;
-  position: relative;
+  position: absolute;
   top: 157px;
   left: 50%;
   transform: translate(-50%);  
   padding-bottom: 25px;
+  box-shadow: 1px 4px 4px 0px rgba(34, 60, 80, 0.25);
 }
 .benefits__content_title {
   padding-top: 26px;
@@ -396,6 +400,331 @@ html {
   line-height: 18px;
 }
 
+@media screen and (max-width: 1160px) {
+  .container {
+    max-width: 910px;
+  }
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px 30px;
+  }
+  .benefits__content {
+    left: 40%;
+  }
+  .contacts__flex {
+    flex-direction: column;
+  }
+  .contacts__content {
+    margin-right: 0;
+  }
+  .contacts__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .contacts__text {
+    text-align: center;
+    margin: 0 auto 42px;
+  } 
+  .contacts__form_input-name {
+    display: block;
+    margin: 0 auto 24px;
+  }
+  .contacts__form_input-phone {
+    display: block;
+    margin: 0 auto 24px;
+  }
+  .contacts__form_btn {
+    display: block;
+    margin: 0 auto;
+  }  
+}
+@media screen and (max-width: 955px) {
+  .container {
+    max-width: 750px;
+  }
+  .text_h2 {
+    font-size: 21px;
+  }
+  .text_p {
+    font-size: 11px;
+  }
+  .header__navbar_menu {
+    display: none;
+  }
+  .header__navbar_menu-btns {
+    display: flex;
+    align-items: center;
+  }
+  .header__navbar_btn {
+    display: none;
+    margin-right: 20px;
+  }
+  .header__navbar_burger {
+    width: 40px;
+    background-color: var(--white-color);
+    padding: 5px 4px;
+    border-radius: 5px;
+  }
+  .header__navbar_burger_line {
+    height: 5px;
+    background-color: var(--red-color);
+    border-radius: 2px;
+    margin-bottom: 5px;
+  }
+  .header__navbar_burger_line:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about__content {
+    max-width: 500px;
+    margin-right: 40px;
+  }
+  .about__title {
+    margin-bottom: 25px;
+  }
+  .about__text {
+    line-height: 17px;
+  }
+  .benefits__content {
+    left: 50%;
+  }
+  .download__content {
+    margin-right: 81px;
+  }
+  .download__title {
+    margin-bottom: 25px;
+  }
+  .download__text {
+    max-width: 445px;
+    line-height: 17px;
+    margin-bottom: 30px;
+  }
+  .contacts__flex {
+    padding-top: 30px;
+    margin-bottom: 70px;
+  }
+  .footer {
+    margin-bottom: 200px;
+  } 
+}
+@media screen and (max-width: 810px) {
+  .container {
+    max-width: 610px;
+  }
+  .header__ {
+    padding-bottom: 130px;
+  }
+  .header__navbar {
+    margin-bottom: 60px;
+  }
+  .about__flex {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  } 
+  .about__content {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .about__title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about__text {
+    text-align: center;
+  }
+  .about__link {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about__video {
+    margin-bottom: 60px;
+  }
+  .benefits {
+    padding-bottom: 160px;
+  }
+  .benefits__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 150px 30px;
+    justify-items: center;
+  }
+  .benefits__title {
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+  .services__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px 30px;
+    margin-bottom: 150px;
+  }
+  .services__title {
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }  
+  .download__flex {
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .download__content {
+    margin-right: 0;    
+  }
+  .download__title {
+    text-align: center;
+    max-width: 366px;
+    margin: 0 auto 25px;
+  }
+  .download__text {
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  .download__socials {
+    margin: 0 auto 30px;
+  }
+  .download__video_mp4 {
+    margin: 0 auto 60px;
+  }
+}
 
+@media screen and (max-width: 660px) {
+  .container {
+    max-width: 450px;
+  }
+  .text_h1 {
+    font-size: 40px;
+  }
+  .header__firstscreen_title {
+    margin-bottom: 20px;
+  }
+  .header__firstscreen_text {
+    margin: 0 auto 40px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .contacts__form_input-name {
+    width: 460px;
+    height: 40px;
+  }
+  .contacts__form_input-name::placeholder {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .contacts__form_input-phone {
+    width: 460px;
+    height: 40px;
+  }
+  .contacts__form_input-phone::placeholder {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .container {
+    max-width: 360px;
+  }
+  .text_h3 {
+    font-size: 13px;
+  }
+  .text_preview {
+    font-size: 9px;
+  }
+  .header__navbar {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+  .header__navbar_logo {
+  }
+  .header__navbar_menu-btns {
+    justify-content: flex-end;
+    margin-bottom: 60px;
+  }
+  .header__firstscreen_title {
+    display: none;
+  }
+  .header__firstscreen_text {
+    max-width: 250px;
+  }
+  .about__video {
+    width: 220px;
+    height: 155px;
+  }
+  .benefits__grid {
+    gap: 105px 30px;
+  }
+  .benefits__img {
+    width: 220px;
+    height: 155px;
+  }
+  .benefits__content {
+    width: 187px;
+    top: 82px;
+  }
+  .benefits__content_title {
+    padding-top: 14px;
+    max-width: 155px;
+    margin: 0 auto 6px;
+  }
+  .benefits__content_text {
+    max-width: 155px;
+    line-height: 14px;
+  }
+  .services__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .download__text {
+    max-width: 260px;
+  }
+  .download__video_mp4 {
+    width: 220px;
+    height: 155px;
+  } 
+  .contacts__text {
+    width: 260px;
+  }
+  .contacts__form_input-name {
+    width: 260px;
+    height: 40px;
+  }
+  .contacts__form_input-name::placeholder {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .contacts__form_input-phone {
+    width: 260px;
+    height: 40px;
+  }
+  .contacts__form_input-phone::placeholder {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .container {
+    max-width: 250px;
+  }
+  .about__content {
+    max-width: 220px;
+  }
+  .download__text {
+    max-width: 220px;
+  }
+  .contacts__text {
+    width: 220px;
+  }
+  .contacts__form_input-name {
+    width: 220px;
+    height: 40px;
+  }
+  .contacts__form_input-phone{
+    width: 220px;
+    height: 40px;
+  }
+  .header__firstscreen_text {
+    max-width: 220px;
+  }
+}
 
 
